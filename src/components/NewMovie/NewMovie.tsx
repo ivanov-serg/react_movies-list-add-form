@@ -27,6 +27,7 @@ export const NewMovie = ({ onAdd }: Props) => {
     movie.imgUrl.trim() !== '' &&
     movie.imdbUrl.trim() !== '' &&
     movie.imdbId.trim() !== '';
+
   return (
     <form
       className="NewMovie"
@@ -61,7 +62,6 @@ export const NewMovie = ({ onAdd }: Props) => {
             description: value,
           });
         }}
-        required
       />
       <TextField
         name="imgUrl"
